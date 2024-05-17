@@ -7,6 +7,11 @@ def enumerate_list(lista):
             index += 1
    return result
 
-
 def enumerate_backwards(list):
-    return list
+    result = []
+    index = 0
+    for string in list:
+        if string:
+            result.append(f"{index}. {string[::-1]}")
+            index += 1
+    return result
